@@ -1,6 +1,5 @@
 package cn.xgpjun.folialib.Enum;
 
-import org.jetbrains.annotations.Nullable;
 
 public enum ServerType {
 

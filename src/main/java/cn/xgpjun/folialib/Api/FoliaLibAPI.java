@@ -1,7 +1,6 @@
 package cn.xgpjun.folialib.Api;
 
 import cn.xgpjun.folialib.Enum.ServerType;
-import cn.xgpjun.folialib.FoliaLib;
 import cn.xgpjun.folialib.Wrapper.Scheduler;
 import cn.xgpjun.folialib.Wrapper.SchedulerWrapper.BukkitScheduler;
 import cn.xgpjun.folialib.Wrapper.SchedulerWrapper.FoliaScheduler;
@@ -17,7 +16,7 @@ public class FoliaLibAPI {
     private final Plugin plugin;
     private final ServerType serverType;
     public FoliaLibAPI(Plugin plugin){
-        serverType = FoliaLib.serverType;
+        serverType = ServerType.getServerType();
         this.plugin = plugin;
     }
     public boolean teleport(Entity entity, Location target){
@@ -36,9 +35,9 @@ public class FoliaLibAPI {
         }
         return new BukkitScheduler(plugin);
     }
-    public Scheduler getScheduler(Entity entity,Runnable runnable){
+    public Scheduler getScheduler(Entity entity,Runnable retired){
         if (Objects.requireNonNull(serverType) == ServerType.FOLIA) {
-            return new FoliaScheduler(plugin,entity,runnable);
+            return new FoliaScheduler(plugin,entity,retired);
         }
         return new BukkitScheduler(plugin);
     }
