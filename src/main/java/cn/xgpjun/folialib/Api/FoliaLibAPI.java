@@ -109,6 +109,5 @@ public class FoliaLibAPI {
         }else {
             Bukkit.getScheduler().cancelTasks(plugin);
         }
-
     }
 }

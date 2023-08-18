@@ -12,10 +12,10 @@ FoliaLibAPI api = new FoliaLibAPI(plugin);
 
 
 
-获得调度管理器
+获得调度管理器等操作
 
 ```
- /**
+    /**
      * 传送实体
      * @param entity 需要传送的实体
      * @param target 目的地
@@ -62,6 +62,12 @@ FoliaLibAPI api = new FoliaLibAPI(plugin);
      * @return 调度管理器
      */
     public Scheduler getScheduler(boolean isGlobal)
+    
+     /**
+     * 取消所有调度任务
+     * @param plugin 你的插件实例
+     */
+    public void cancelTask(Plugin plugin)
 ```
 
 
@@ -69,7 +75,7 @@ FoliaLibAPI api = new FoliaLibAPI(plugin);
 调度写法与Bukkit类似
 
 ```
-		Task runTask(@NotNull Runnable runnable);
+    Task runTask(@NotNull Runnable runnable);
 
     Task runTaskLater(@NotNull Runnable runnable, long delay);
 
@@ -87,7 +93,7 @@ FoliaLibAPI api = new FoliaLibAPI(plugin);
 返回Task为调度程序实例
 
 ```
-		Plugin getOwningPlugin();
+    Plugin getOwningPlugin();
     void cancel();
     boolean isCancelled();
     boolean isTimerTask();
