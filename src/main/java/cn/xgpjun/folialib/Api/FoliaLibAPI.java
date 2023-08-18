@@ -4,6 +4,7 @@ import cn.xgpjun.folialib.Enum.ServerType;
 import cn.xgpjun.folialib.Wrapper.Scheduler;
 import cn.xgpjun.folialib.Wrapper.SchedulerWrapper.BukkitScheduler;
 import cn.xgpjun.folialib.Wrapper.SchedulerWrapper.FoliaScheduler;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.player.PlayerTeleportEvent;
@@ -95,5 +96,19 @@ public class FoliaLibAPI {
             return new FoliaScheduler(plugin,isGlobal);
         }
         return new BukkitScheduler(plugin);
+    }
+
+    /**
+     * 取消所有调度任务
+     * @param plugin 你的插件实例
+     */
+    public void cancelTask(Plugin plugin){
+        if (Objects.requireNonNull(serverType) == ServerType.FOLIA) {
+            Bukkit.getGlobalRegionScheduler().cancelTasks(plugin);
+            Bukkit.getAsyncScheduler().cancelTasks(plugin);
+        }else {
+            Bukkit.getScheduler().cancelTasks(plugin);
+        }
+
     }
 }
