@@ -1,6 +1,6 @@
-package cn.xgpjun.folialib.Wrapper.TaskWrapper;
+package cn.xgpjun.folialib.wrapper.taskWrapper;
 
-import cn.xgpjun.folialib.Wrapper.Task;
+import cn.xgpjun.folialib.wrapper.Task;
 import org.bukkit.plugin.Plugin;
 
 public class BukkitTask implements Task {

@@ -1,4 +1,4 @@
-package cn.xgpjun.folialib.Enum;
+package cn.xgpjun.folialib.enums;
 
 public enum SchedulerType {
     GLOBAL,

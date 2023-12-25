@@ -1,5 +1,0 @@
-name: FoliaLib
-version: '${project.version}'
-main: cn.xgpjun.folialib.FoliaLib
-api-version: '1.13'
-folia-supported: true

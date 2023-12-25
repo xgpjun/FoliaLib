@@ -1,8 +1,8 @@
-package cn.xgpjun.folialib.Wrapper.SchedulerWrapper;
+package cn.xgpjun.folialib.wrapper.schedulerWrapper;
 
-import cn.xgpjun.folialib.Wrapper.Scheduler;
-import cn.xgpjun.folialib.Wrapper.Task;;
-import cn.xgpjun.folialib.Wrapper.TaskWrapper.BukkitTask;
+import cn.xgpjun.folialib.wrapper.Scheduler;
+import cn.xgpjun.folialib.wrapper.Task;;
+import cn.xgpjun.folialib.wrapper.taskWrapper.BukkitTask;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;

@@ -1,4 +1,4 @@
-package cn.xgpjun.folialib.Wrapper;
+package cn.xgpjun.folialib.wrapper;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,9 +1,9 @@
-package cn.xgpjun.folialib.Api;
+package cn.xgpjun.folialib.api;
 
-import cn.xgpjun.folialib.Enum.ServerType;
-import cn.xgpjun.folialib.Wrapper.Scheduler;
-import cn.xgpjun.folialib.Wrapper.SchedulerWrapper.BukkitScheduler;
-import cn.xgpjun.folialib.Wrapper.SchedulerWrapper.FoliaScheduler;
+import cn.xgpjun.folialib.enums.ServerType;
+import cn.xgpjun.folialib.wrapper.Scheduler;
+import cn.xgpjun.folialib.wrapper.schedulerWrapper.BukkitScheduler;
+import cn.xgpjun.folialib.wrapper.schedulerWrapper.FoliaScheduler;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;

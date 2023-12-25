@@ -1,9 +1,9 @@
-package cn.xgpjun.folialib.Wrapper.SchedulerWrapper;
+package cn.xgpjun.folialib.wrapper.schedulerWrapper;
 
-import cn.xgpjun.folialib.Enum.SchedulerType;
-import cn.xgpjun.folialib.Wrapper.Scheduler;
-import cn.xgpjun.folialib.Wrapper.Task;
-import cn.xgpjun.folialib.Wrapper.TaskWrapper.FoliaTask;
+import cn.xgpjun.folialib.enums.SchedulerType;
+import cn.xgpjun.folialib.wrapper.Scheduler;
+import cn.xgpjun.folialib.wrapper.Task;
+import cn.xgpjun.folialib.wrapper.taskWrapper.FoliaTask;
 import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
